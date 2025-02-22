@@ -1,0 +1,1074 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
+header{
+    background-color: #53D9E8;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    background-color: #53D9E8;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color: rgb(1, 0, 1);
+    box-sizing: border-box;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    gap: 70px;
+}
+
+nav .logo{
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px;
+    font-size: 20px;
+    display: none;
+}
+
+.logo h4{
+    font-family: "Mystery Quest", serif;
+    font-weight: 800;
+    font-style: normal;
+    
+}
+
+nav ul li a{
+    color: rgb(1, 0, 1); 
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 70%;
+    
+}
+
+nav ul li a:hover{
+   border-bottom: solid 3px ;
+   opacity: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(7, 2, 9);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin:0 0; ;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin:0 100%; ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: rgb(7, 2, 9);
+    transform:rotate(45deg) translate(-1px, 1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: rgb(7, 2, 9);
+    transform:rotate(-45deg) translate(-1px, 0);
+ }
+
+ .menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform:scale(0);
+ }
+
+.gambar{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+    width: 100%;
+}
+.gambar>img{
+    height: 100vh;
+    width: 50%;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    width: 600px;
+    height: 170px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 120px;
+}
+
+.brand>h1{
+    margin-left: 130px;
+    font-family: "Mystery Quest", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.tagline{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    width: 50%;
+    height: 70px;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.tagline>p{
+    margin-left: 40px;
+}
+
+.promo{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 500px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.promo>h2{
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+.lokasi{
+    display: flex;
+    font-size: 16px;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.lokasi>img{
+    height: 40px;
+    width: 40px;
+}
+
+.nohp2{
+    display: flex;
+    font-size: 16px;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.nohp2>img{
+    height: 40px;
+    width: 40px;
+}
+
+.nohp3{
+    display: flex;
+    font-size: 16px;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.nohp3>img{
+    height: 40px;
+    width: 40px;
+}
+
+.nohp4{
+    display: flex;
+    font-size: 16px;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.nohp4>img{
+    height: 40px;
+    width: 40px;
+}
+
+.container2{
+    position: relative;
+    background: rgba(80,255,0,0);
+    background: repeating-radial-gradient(circle farthest-corner at center center, rgba(80,255,0,0) 0%, rgba(0,233,255,0.24) 20%);
+    background: -webkit-repeating-radial-gradient(circle farthest-corner at center center, rgba(80,255,0,0) 0%, rgba(0,233,255,0.24) 20%);
+    background: -moz-repeating-radial-gradient(circle farthest-corner at center center, rgba(80,255,0,0) 0%, rgba(0,233,255,0.24) 20%);
+}
+.judul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.judul h1{
+    margin-top: 50px;
+}
+
+.bacground{
+    display: flex;
+    justify-content: end;
+}
+
+.bacground>img{
+    position: absolute;
+    height: 600px;
+    width: 40%;
+    margin-right: 80px;
+}
+
+.isi{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+.isi ul li h3{
+    font-weight: 600;
+}
+
+.isi>ul>li{
+    margin: 20px;
+}
+
+.tentangKami{
+    margin-top: 50px;
+}
+
+.tentangKami h1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.visiMisi{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.visi{
+    width: 40%;
+}
+
+.visi h4{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.visi p{
+    text-indent: 30px;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.misi{
+    width: 40%;
+}
+
+.misi h4{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.misi ul li p{
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    margin: 10px;
+}
+
+.isi1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.isi1 p{
+    width: 90%;
+    text-indent: 30px;
+    font-size: 24px; 
+    margin-left: 100px;
+}
+
+.layanan {
+ display: flex;
+ justify-content: center;
+ margin-top: 50px;
+}
+
+.layanan h1{
+    font-size: 60px;
+}
+
+.jenisLayanan {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.layanan1{
+    display: flex;
+    justify-content: center;
+    flex-basis: 1;
+    flex-grow: 200px;
+    width: 300px;
+    height: 480px;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 21px 4px rgba(0,0,0,0.75);
+}
+
+.layanan1 img{
+    width: 300px;
+    height: 300px;
+}
+
+.layanan1 h4{
+    display: flex;
+    justify-content: center;
+    font-size: 24px
+}
+
+.layanan1 p{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-indent: 30px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.layanan1 h5{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.layanan1 button{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 8px;
+    background-color: #62C767;
+    border: none;
+}
+
+.layanan1 button:hover{
+    background-color: #008206;
+    width: 110px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.layanan1 button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.judul2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.judul2 h1{
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.owner{
+    background-color: rgb(235, 235, 235) ;
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.owner>div>img{
+    height: 300px;
+    width: 300px;
+}
+
+.data>h3{
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+}
+
+.data div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.data div img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    
+}
+
+.data div p a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.owner2{
+    background-color: rgb(235, 235, 235) ;
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.owner2>div>img{
+    height: 300px;
+    width: 300px;
+}
+
+.data2>h3{
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+}
+
+.data2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.data2 div img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    
+}
+
+.data2 div p a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #E7E7E7;
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.brand2{
+    display: flex;
+    align-self: center;
+}
+
+.brand2 h1{
+    font-size: 60px;
+    font-family: "Mystery Quest", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.service{
+    margin-top: 30px;
+}
+
+.service h4{
+    font-size: 30px;
+}
+
+.service ul li{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-bottom: solid 2px
+}
+
+.service ul li:hover{
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.kontak{
+    margin-top: 30px;
+}
+
+.kontak h4{
+    font-size: 30px;
+}
+
+.kontak ul li {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-bottom: solid 2px
+}
+
+.kontak ul li:hover{
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.kontak ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sosmed{
+    margin-top: 100px;
+}
+
+.sosmed2{
+    display: flex;
+    align-items: center;
+}
+
+.sosmed3{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.sosmed img{
+    width: 50px;
+    height: 50px;
+}
+
+.sosmed h4{
+    font-size: 25px;
+}
+
+
+
+@media  screen and (max-width: 1089px) { 
+
+    .brand{
+        width: 50%;
+    }
+
+    .brand>h1{
+       margin-left: 100px
+    }
+
+    .promo{
+        width: 40%;
+    }
+
+    .promo>h2{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .lokasi{
+        margin-left: 30px;
+    }
+
+    .nohp2{
+        margin-left: 30px;
+    }
+
+    .nohp3{
+        margin-left: 30px;
+    }
+
+    .nohp4{
+        margin-left: 30px;
+    }
+
+    .judul>h1{
+        font-size: 35px;
+    }
+
+    .isi{
+        font-size: 20px;
+    }
+
+    .judul2>h1{
+        font-size: 35px;
+    }
+
+    .kontak{
+        left: 0px;
+    }
+
+    .tentangKami h1 {
+        font-size: 35px;
+    }
+
+    .visi p{
+        font-size: 20px;
+    }
+
+    .misi ul li{
+        font-size: 20px;
+    }
+
+    .isi1 p{
+        font-size: 20px;
+        margin-left: 60px;
+    }
+
+    .layanan h1{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 969px){
+    .tagline>p{
+        font-size: 20px;
+    }
+
+    .promo>h2{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .lokasi{
+        margin-left: 30px;
+    }
+
+    .nohp2{
+        margin-left: 30px;
+    }
+
+    .nohp3{
+        margin-left: 30px;
+    }
+
+    .nohp4{
+        margin-left: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 879px){
+    .promo{
+        width: 50%;
+    }
+
+    .service h4{
+        font-size: 20px;
+    }
+
+    .service ul li{
+        font-size: 20px;
+    }
+
+    .kontak h4{
+        font-size: 20px;
+    }
+
+    .kontak ul li {
+        font-size: 20px;
+    }
+
+    .sosmed2 img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .sosmed2 h4{
+        font-size: 20px;
+    }
+
+    .sosmed3 img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .sosmed3 h4{
+        font-size: 20px;
+    }
+    .service{
+        margin-top: 60px;
+    }
+    .kontak{
+        margin-top: 60px;
+    }
+
+}
+
+
+@media screen and (max-width: 787px) {
+
+    header{
+        height: 74vh;
+    }
+
+    .gambar{
+        height: 74vh;
+    }
+    .gambar>img{
+        height: 74vh;
+    }
+    
+    .brand>h1{
+        margin-left: 80px
+     }
+
+    .tagline{
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .tagline>p{
+        margin-left: 10px;
+    }
+
+   
+    .promo>h2{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .lokasi{
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    .lokasi>p{
+        margin-left: -10px;
+        font-size: 12px;
+    }
+
+    .nohp2{
+       display: none;
+    }
+
+    .nohp2>P{
+        display: none;
+    }
+
+    .nohp3{
+        display: none;
+    }
+
+    .nohp3>P{
+        display: none;
+    }
+
+    .nohp4{
+        display: none;
+    }
+
+    .nohp4>P{
+        display: none;
+    }
+
+    .isi{
+        font-size: 18px
+    }
+
+    .bacground>img{
+        margin-right: 10px;
+        width: 50%;
+        }
+
+    .brand2>h1{
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width: 670px){
+    .brand>h1{
+        margin-left:30px;
+    }
+
+    .tagline>p{
+        font-size: 16px;
+    }
+
+    .promo{
+        margin-top: 10px;
+    }
+
+    .promo>h2{
+        font-size: 16px;
+    }
+
+    .sosmed{
+        display: none;
+    }
+
+    .profile{
+        display: flex;
+       flex-wrap: wrap;
+        
+    }
+}
+
+
+@media screen and (max-width: 567px){
+
+    .navbar{
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        z-index: 8;
+    }
+
+    nav .logo{
+        display: block;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 80%;
+     height: 100vh;
+     font-size: 30px;
+     justify-content: space-evenly;
+     flex-direction: column;
+     align-items: center;
+     background-color: #53D9E8;
+     z-index: 2;
+     transform: translateX(100%);
+     transition: all 1s;
+     opacity: 0;
+    } 
+
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .brand{
+        display: none;
+    }
+
+    .gambar>img{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .tagline{
+        display: none;
+    }
+
+    .promo{
+        display: none;
+    }
+
+    .lokasi{
+        display: none;
+    }
+
+    .nohp2{
+        display: none;
+    }
+
+    .nohp3{
+        display: none;
+    }
+
+    .nohp4{
+        display: none;
+    }
+
+
+    .judul>h1{
+        font-size: 30px;
+    }
+    
+    .bacground{
+        display: none;
+    }
+
+    .isi{
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0px;
+        display: grid;
+    }
+
+    .isi>ul>li{
+        font-size: 15px;
+    }
+
+    .judul{
+        margin-top: -10px;
+    }
+
+    .judul>h1{
+        font-size: 30px;
+    }
+
+    .layanan h1{
+        font-size: 30px;
+    }
+
+    .brand2>h1{
+        font-size: 30px;
+    }
+
+    .visiMisi {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tentangKami h1{
+        font-size: 30px;
+    }
+
+    .visi h4{
+        font-size: 22px;
+    }
+
+    .visi{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .visi p{
+        font-size: 15px;
+    }
+
+    .misi{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .misi h4{
+        font-size: 22px;
+    }
+
+    .misi ul li {
+        font-size: 15px;
+    }
+
+    .isi1 p{
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .judul2{
+        margin-top: 30px;
+    }
+
+    .judul2 h1{
+        font-size: 30px;
+    }
+
+    footer{
+        height: 250px;
+    }
+    
+
+}
+
+@media screen and (max-width: 415px){
+
+    .judul h1{
+        font-size: 25px;
+    }
+
+    .tentangKami h1{
+        font-size: 25px;
+    }
+
+    .layanan h1{
+        font-size: 25px;
+    }
+
+    .judul2 h1{
+        font-size: 25px;
+    }
+
+    .service h4{
+        font-size: 15px;
+    }
+
+    .service ul li{
+        font-size: 15px;
+    }
+
+    .kontak h4{
+        font-size: 15px;
+    }
+
+    .kontak ul li{
+        font-size: 15px;
+    }
+    
+}
