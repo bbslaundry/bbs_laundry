@@ -389,13 +389,13 @@ nav ul li a:hover{
     width: 250px;
     display: flex;
     justify-content: center;
-    font-size:18px;
+    font-size:20px;
     text-indent: 30px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-    margin-left: 10PX;
+    
 }
 
 .layanan1 h5{
@@ -673,7 +673,7 @@ footer{
         font-size: 20px;
     }
 
-    .misi ul li{
+    .misi ul li p{
         font-size: 20px;
     }
 
@@ -1014,7 +1014,7 @@ footer{
         font-size: 22px;
     }
 
-    .misi ul li {
+    .misi ul li p {
         font-size: 15px;
     }
 
